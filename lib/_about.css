@@ -1,0 +1,121 @@
+.about header {
+    align-items: flex-start;
+
+    @media (--large) {
+        justify-content: left;
+    }
+}
+.about h1 {
+    max-width: 300px;
+    align-self: flex-start;
+    margin-left: 2rem;
+
+    @media (--large) {
+        max-width: 500px;
+        align-self: center;
+    }
+}
+
+.about section {
+    background-color: white;
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+    line-height: 120%;
+
+    & h2 {
+        margin-bottom: 1rem;
+    }
+
+    &.mission-statement {
+        height: auto;
+    }
+    & .description {
+        position: static;
+    }
+    &.why {
+        padding: 1rem 0;
+    }
+
+    & p {
+        padding: 0 1rem;
+    }
+
+    & li {
+        margin: 1rem;
+        @media (width >= 816px) {
+            margin-left: 0;
+        }
+    }
+
+    @media (--large) {
+        & h2 {
+            margin-bottom: 3rem;
+        }
+
+        &.mission-statement {
+            height: 100vh;
+            & p {
+                max-width: 1000px;
+            }
+        }
+        &.story-section {
+            display: grid;
+            grid-template-columns: 58% 1fr;
+            grid-template-rows: 15% 70% 15%;
+            height: 140vh;
+            padding: 20vh 0;
+            background-color: var(--white);
+
+            & h2 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                z-index: 3;
+                color: white;
+            }
+            & div.img {
+                grid-column: 1/2;
+                grid-row: 1/4;
+                background: url(images/rocket-short.jpg);
+                background-size: cover;
+            }
+
+            & div.description {
+                grid-row: 2/3;
+                margin-left: -17%;
+                padding: 15%;
+            }
+        }
+
+        &.why {
+            display: grid;
+            grid-template-columns: 1fr 58%;
+            grid-template-rows: 15% 70% 15%;
+            height: 140vh;
+            padding: 20vh 0;
+            background-color: var(--white);
+
+            & h2 {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                z-index: 3;
+                color: white;
+                max-width: 300px;
+                line-height: 100%;
+                margin-left: 17%;
+            }
+            & div.img {
+                grid-column: 2/3;
+                grid-row: 1/4;
+                background: url(images/spacex-short.jpg);
+                background-size: cover;
+            }
+
+            & div.description {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                margin-left: 17%;
+                padding: 10%;
+            }
+        }
+    }
+}

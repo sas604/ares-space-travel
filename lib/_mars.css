@@ -1,0 +1,21 @@
+section.content {
+    background-color: var(--white);
+}
+.content-wrap {
+    background-color: white;
+    padding: 10%;
+    margin-top: -11rem;
+    max-width: 900px;
+    margin: -11rem auto 0;
+    & p {
+        margin-bottom: 1rem;
+        @media (--large) {
+            font-size: 1.4rem;
+            line-height: 120%;
+            margin-bottom: 1.4rem;
+        }
+    }
+    & p:first-of-type {
+        text-indent: 1rem;
+    }
+}

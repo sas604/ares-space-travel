@@ -1,0 +1,26 @@
+iframe {
+    margin-top: 2rem;
+    width: 30vw;
+    height: 40vh;
+    min-width: 300px;
+    @media (--large) {
+        max-width: 400px;
+        height: 50vh;
+    }
+}
+.content-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    & ul.contact {
+        min-width: 300px;
+        order: -1;
+        & li {
+            margin: 1rem;
+            font-size: 1.5rem;
+        }
+        & i {
+            margin-right: 1rem;
+        }
+    }
+}

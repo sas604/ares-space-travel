@@ -1,0 +1,14 @@
+:root {
+    --white: #f7f7f7;
+
+    --font-size: 1rem;
+    --line: 150%;
+    --font: "Jura", sans-serif;
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-bold: 600;
+}
+/*@custom-media --medium (width >= 748px);*/
+@custom-media --large (width >= 992px);
+@custom-media --extralarge (width >= 1200px);
+@custom-media --small (width >= 450px);

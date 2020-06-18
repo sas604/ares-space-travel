@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Ares Space Travel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script
+            src="https://kit.fontawesome.com/62d6693c97.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!--- <img src="images/hero.jpg" id="bg" alt="space photo" />-->
+        <div class="site-wraper">
+            <i id="anchor"></i>
+            <span class="menu">MENU</span>
+            <nav id="main-nav">
+                <i class="fas fa-times"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Ares</a></li>
+                    <li>
+                        <a href="#" id="subBtn"
+                            >Destinations<i
+                                class="fas fa-caret-down"
+                                id="caret"
+                            ></i
+                        ></a>
+                        <ul class="child">
+                            <li><a href="mars-info.html">Mars</a></li>
+                            <li><a href="moon-info.html">The Moon</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Info</a></li>
+                </ul>
+            </nav>
+            <div class="parallax">
+                <header class="site-header">
+                    <h1>Contact us</h1>
+                </header>
+            </div>
+            <section class="content">
+                <div class="content-wrap">
+                    <iframe
+                        frameborder="0"
+                        style="border: 0;"
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRZr7pfKj4IgR3o8PJe6R74c&key=AIzaSyCvwWkpEoxaVCXxkmw1mMZyGNc4lCC7CuY"
+                        allowfullscreen
+                    ></iframe>
+                    <ul class="contact">
+                        <li>
+                            <i class="fas fa-envelope"></i
+                            ><a
+                                href="mailto:someone@example.com?Subject=Hello%20again"
+                                target="_top"
+                                >info@ares.com</a
+                            >
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i
+                            ><a href="tel:123-456-7890">(619) 555-1212</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marked-alt"></i>
+
+                            Ares Space Travel Cape Canaveral, Fl, USA.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer>&copy;Ares Space Travel</footer>
+        </div>
+
+        <script src="js.js" async defer></script>
+    </body>
+</html>
