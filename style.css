@@ -925,16 +925,40 @@ footer {
 }
     }
 
-html:link,html:visited {
+a:link,a:visited {
+    color: #1d0930;
+    text-decoration: none;
 }
 
-html:-webkit-any-link {
+a:-webkit-any-link {
+    color: #1d0930;
+    text-decoration: none;
 }
 
-html:-moz-any-link {
+a:-moz-any-link {
+    color: #1d0930;
+    text-decoration: none;
 }
 
-html:any-link {
+a:any-link {
+    color: #1d0930;
+    text-decoration: none;
+}
+
+a:link:hover,a:visited:hover {
+    color: #639;
+}
+
+a:-webkit-any-link:hover {
+    color: #639;
+}
+
+a:-moz-any-link:hover {
+    color: #639;
+}
+
+a:any-link:hover {
+    color: #639;
 }
 
 #main-nav {
@@ -1189,8 +1213,9 @@ iframe {
 @media (min-width: 992px) {
 
 iframe {
-        max-width: 400px;
-        height: 50vh
+        width: 50vw;
+        max-width: 500px;
+        height: 90vh
 }
     }
 

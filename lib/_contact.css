@@ -4,8 +4,9 @@ iframe {
     height: 40vh;
     min-width: 300px;
     @media (--large) {
-        max-width: 400px;
-        height: 50vh;
+        width: 50vw;
+        max-width: 500px;
+        height: 90vh;
     }
 }
 .content-wrap {

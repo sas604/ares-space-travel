@@ -9,7 +9,6 @@ const del = require("del"),
     gutil = require("gulp-util"),
     sourcemaps = require("gulp-sourcemaps"),
     partials = require("postcss-partial-import"),
-    calc = require("postcss-calc-function"),
     browserSync = require("browser-sync").create();
 
 //const browserSync = require('browser-sync').create();

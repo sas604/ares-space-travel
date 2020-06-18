@@ -349,5 +349,11 @@ footer {
     }
 }
 
-html:any-link {
+a:any-link {
+    color: #1d0930;
+    text-decoration: none;
+}
+
+a:any-link:hover {
+    color: #639;
 }
